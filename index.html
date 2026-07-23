@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="todo-card">
+        <header class="hero">
+          <span class="eyebrow">Practice Project</span>
+          <h1>Todo List</h1>
+          <p>
+            Add tasks, search quickly, and filter by status. Everything is saved
+            in your browser.
+          </p>
+        </header>
+
+        <section class="controls">
+          <div class="input-group">
+            <label for="todoInput">Task Name</label>
+            <input
+              type="text"
+              id="todoInput"
+              placeholder="Write your next task..."
+            />
+            <small id="todoError" class="error-message"
+              >Please enter at least 3 characters.</small
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="statusFilter">Filter Tasks</label>
+            <select id="statusFilter">
+              <option value="all">All</option>
+              <option value="pending">Pending</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+        </section>
+
+        <div class="input-group search-group">
+          <label for="searchInput">Search</label>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search by task name"
+          />
+        </div>
+
+        <button id="addButton" class="primary-btn" type="button">Add Todo</button>
+
+        <section class="stats" aria-label="Task statistics">
+          <article>
+            <span id="allCount">0</span>
+            <p>Total</p>
+          </article>
+          <article>
+            <span id="pendingCount">0</span>
+            <p>Pending</p>
+          </article>
+          <article>
+            <span id="completedCount">0</span>
+            <p>Completed</p>
+          </article>
+        </section>
+
+        <section id="todoList" class="todo-list" aria-live="polite"></section>
+      </section>
+    </main>
+
+    <script src="java/main.js"></script>
+  </body>
+</html>
