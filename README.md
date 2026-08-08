@@ -18,9 +18,3 @@ The project includes:
 
 While working on this project, I practiced JavaScript DOM manipulation, events, LocalStorage, filtering, validation, and responsive design.
 
-🔗 GitHub:
-https://github.com/mo7amedabuzaid/project-mangmet-system
-
-More projects coming soon. 💻
-
-#HTML #CSS #JavaScript #Frontend #WebDevelopment #GitHub
